@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+<nav class="p-3 bg-blue-500 text-white">
+<a href="../../index.html">StudyHub</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a> |
+<a href="signup.html">Sign Up</a> |
+<a href="signin.html">Sign In</a>
+</nav>
+
+<h1 class="text-3xl text-center p-5">Contact Us</h1>
+
+<div class="grid grid-cols-5 gap-2 p-4">
+<div class="p-3 bg-gray-100">Email</div>
+<div class="p-3 bg-gray-100">Phone</div>
+<div class="p-3 bg-gray-100">Address</div>
+<div class="p-3 bg-gray-100">Support</div>
+<div class="p-3 bg-gray-100">Hours</div>
+</div>
+
+<form action="https://formspree.io/f/YOUR_ID" method="POST"
+class="p-5 max-w-md mx-auto">
+
+<input name="name" required placeholder="Name" class="border p-2 w-full mb-2">
+
+<input name="email" type="email" required placeholder="Email" class="border p-2 w-full mb-2">
+
+<textarea name="message" required placeholder="Message" class="border p-2 w-full mb-2"></textarea>
+
+<button class="bg-blue-500 text-white p-2">Send</button>
+
+</form>
+
+<footer class="bg-gray-800 text-white text-center p-3">
+StudyHub © 2026
+</footer>
+
+</body>
+</html>
