@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<title>Contact - StudyHub</title>
+<link rel="stylesheet" href="../../assets/css/output.css">
 </head>
-
 <body>
 
-<nav class="p-3 bg-blue-500 text-white">
+<nav class="p-4 bg-blue-600 text-white">
 <a href="../../index.html">StudyHub</a> |
 <a href="about.html">About</a> |
 <a href="contact.html">Contact</a> |
@@ -15,30 +14,34 @@
 <a href="signin.html">Sign In</a>
 </nav>
 
-<h1 class="text-3xl text-center p-5">Contact Us</h1>
+<div class="p-6 max-w-xl mx-auto">
+<h1 class="text-3xl font-bold mb-4">Contact Us</h1>
 
-<div class="grid grid-cols-5 gap-2 p-4">
-<div class="p-3 bg-gray-100">Email</div>
-<div class="p-3 bg-gray-100">Phone</div>
-<div class="p-3 bg-gray-100">Address</div>
-<div class="p-3 bg-gray-100">Support</div>
-<div class="p-3 bg-gray-100">Hours</div>
-</div>
+<div class="p-4 bg-blue-100 rounded mb-3">📧 Email Support</div>
+<div class="p-4 bg-green-100 rounded mb-3">📍 Location</div>
+<div class="p-4 bg-yellow-100 rounded mb-3">💬 Student Support</div>
+<div class="p-4 bg-purple-100 rounded mb-3">❓ FAQ</div>
 
-<form action="https://formspree.io/f/YOUR_ID" method="POST"
-class="p-5 max-w-md mx-auto">
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+class="p-5 bg-white shadow rounded">
 
-<input name="name" required placeholder="Name" class="border p-2 w-full mb-2">
+<input name="name" required placeholder="Name"
+class="border p-2 w-full mb-3">
 
-<input name="email" type="email" required placeholder="Email" class="border p-2 w-full mb-2">
+<input type="email" name="email" required placeholder="Email"
+class="border p-2 w-full mb-3">
 
-<textarea name="message" required placeholder="Message" class="border p-2 w-full mb-2"></textarea>
+<textarea name="message" required placeholder="Message"
+class="border p-2 w-full mb-3"></textarea>
 
-<button class="bg-blue-500 text-white p-2">Send</button>
+<button class="bg-blue-600 text-white p-2 w-full">
+Send
+</button>
 
 </form>
+</div>
 
-<footer class="bg-gray-800 text-white text-center p-3">
+<footer class="p-4 bg-gray-800 text-white text-center">
 StudyHub © 2026
 </footer>
 

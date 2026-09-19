@@ -1,46 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>StudyHub</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Home</title>
+    <link rel="stylesheet" href="assets/css/output.css">
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800">
 
 <!-- Navbar -->
-<nav class="p-4 bg-blue-500 text-white">
-    <a href="index.html">StudyHub</a> |
-    <a href="src/pages/about.html">About</a> |
-    <a href="src/pages/contact.html">Contact</a> |
-    <a href="src/pages/signup.html">Sign Up</a> |
-    <a href="src/pages/signin.html">Sign In</a>
+<nav class="bg-blue-600 text-white px-6 py-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-4">
+        <a href="index.html" class="text-2xl font-bold">StudyHub</a>
+
+        <div class="flex flex-wrap gap-4">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="src/pages/about.html" class="hover:underline">About</a>
+            <a href="src/pages/contact.html" class="hover:underline">Contact</a>
+            <a href="src/pages/signup.html" class="hover:underline">Sign Up</a>
+            <a href="src/pages/signin.html" class="hover:underline">Sign In</a>
+        </div>
+    </div>
 </nav>
 
-<!-- Hero -->
-<section class="text-center p-10 bg-blue-100">
-    <h1 class="text-3xl font-bold">Welcome to StudyHub</h1>
-    <p>Learn better and manage your studies.</p>
+<!-- Hero Component -->
+<section class="bg-blue-100 text-center py-16 px-6">
+    <h1 class="text-4xl font-bold mb-4">Welcome to StudyHub</h1>
+    <p class="text-lg text-gray-600 mb-6">
+        Learn better, stay organized and achieve your study goals.
+    </p>
+    <a href="src/pages/signup.html"
+       class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+        Get Started
+    </a>
 </section>
 
-<!-- 10 Components -->
-<div class="p-5 grid grid-cols-2 gap-4">
+<!-- 10 Tailwind Components -->
+<section class="max-w-6xl mx-auto p-6">
+    <h2 class="text-2xl font-bold text-center mb-8">StudyHub Features</h2>
 
-    <div class="p-5 bg-gray-100">📚 Courses</div>
-    <div class="p-5 bg-gray-100">📝 Notes</div>
-    <div class="p-5 bg-gray-100">🎥 Videos</div>
-    <div class="p-5 bg-gray-100">❓ Quizzes</div>
-    <div class="p-5 bg-gray-100">📊 Progress</div>
-    <div class="p-5 bg-gray-100">✅ Tasks</div>
-    <div class="p-5 bg-gray-100">🎯 Goals</div>
-    <div class="p-5 bg-gray-100">📖 Resources</div>
-    <div class="p-5 bg-gray-100">👥 Community</div>
-    <div class="p-5 bg-gray-100">💡 Support</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
 
-</div>
+        <!-- Component 1 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">📚</div>
+            <h3 class="font-bold mt-3">Courses</h3>
+            <p class="text-sm text-gray-500 mt-2">Manage your courses easily.</p>
+        </div>
 
-<!-- Footer -->
-<footer class="p-5 bg-gray-800 text-white text-center">
-    StudyHub © 2026
+        <!-- Component 2 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">📝</div>
+            <h3 class="font-bold mt-3">Notes</h3>
+            <p class="text-sm text-gray-500 mt-2">Keep important notes organized.</p>
+        </div>
+
+        <!-- Component 3 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">🎥</div>
+            <h3 class="font-bold mt-3">Videos</h3>
+            <p class="text-sm text-gray-500 mt-2">Access useful learning videos.</p>
+        </div>
+
+        <!-- Component 4 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">❓</div>
+            <h3 class="font-bold mt-3">Quizzes</h3>
+            <p class="text-sm text-gray-500 mt-2">Test your knowledge.</p>
+        </div>
+
+        <!-- Component 5 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">📊</div>
+            <h3 class="font-bold mt-3">Progress</h3>
+            <p class="text-sm text-gray-500 mt-2">Track your learning progress.</p>
+        </div>
+
+        <!-- Component 6 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">✅</div>
+            <h3 class="font-bold mt-3">Tasks</h3>
+            <p class="text-sm text-gray-500 mt-2">Stay on top of assignments.</p>
+        </div>
+
+        <!-- Component 7 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">🎯</div>
+            <h3 class="font-bold mt-3">Goals</h3>
+            <p class="text-sm text-gray-500 mt-2">Set and achieve study goals.</p>
+        </div>
+
+        <!-- Component 8 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">📖</div>
+            <h3 class="font-bold mt-3">Resources</h3>
+            <p class="text-sm text-gray-500 mt-2">Find helpful study resources.</p>
+        </div>
+
+        <!-- Component 9 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">👥</div>
+            <h3 class="font-bold mt-3">Community</h3>
+            <p class="text-sm text-gray-500 mt-2">Connect with other students.</p>
+        </div>
+
+        <!-- Component 10 -->
+        <div class="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md">
+            <div class="text-3xl">💡</div>
+            <h3 class="font-bold mt-3">Support</h3>
+            <p class="text-sm text-gray-500 mt-2">Get help when you need it.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer Component -->
+<footer class="bg-gray-800 text-white text-center py-6 mt-8">
+    <p>© 2026 StudyHub. All rights reserved.</p>
 </footer>
 
 </body>

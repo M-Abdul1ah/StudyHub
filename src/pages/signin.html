@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sign In</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<title>Sign In - StudyHub</title>
+<link rel="stylesheet" href="../../assets/css/output.css">
 </head>
-
 <body>
 
-<nav class="p-3 bg-blue-500 text-white">
+<nav class="p-4 bg-blue-600 text-white">
 <a href="../../index.html">StudyHub</a> |
 <a href="about.html">About</a> |
 <a href="contact.html">Contact</a> |
@@ -15,32 +14,36 @@
 <a href="signin.html">Sign In</a>
 </nav>
 
-<h1 class="text-3xl text-center p-5">Sign In</h1>
+<div class="max-w-md mx-auto p-6">
 
-<div class="grid grid-cols-5 gap-2 p-4">
-<div class="p-3 bg-gray-100">Home</div>
-<div class="p-3 bg-gray-100">Courses</div>
-<div class="p-3 bg-gray-100">Notes</div>
-<div class="p-3 bg-gray-100">Goals</div>
-<div class="p-3 bg-gray-100">Progress</div>
-</div>
+<h1 class="text-3xl font-bold mb-4">Sign In</h1>
 
-<form class="max-w-sm mx-auto p-4">
-<input required type="email" placeholder="Email"
-class="border p-2 w-full mb-2">
+<div class="p-4 bg-blue-100 rounded mb-3">👤 Account</div>
+<div class="p-4 bg-green-100 rounded mb-3">📧 Email</div>
+<div class="p-4 bg-yellow-100 rounded mb-3">🔒 Security</div>
 
-<input required type="password" placeholder="Password"
-class="border p-2 w-full mb-2">
+<form class="bg-white shadow p-5 rounded">
 
-<button class="bg-blue-500 text-white p-2 w-full">
+<input type="email" required placeholder="Email"
+class="border p-2 w-full mb-3">
+
+<input type="password" required placeholder="Password"
+class="border p-2 w-full mb-3">
+
+<button class="bg-blue-600 text-white p-2 w-full">
 Sign In
 </button>
 
-<p>Don't have an account?
-<a href="signup.html">Sign up</a></p>
 </form>
 
-<footer class="bg-gray-800 text-white text-center p-3">
+<div class="p-4 bg-gray-100 rounded mt-3">
+Don't have an account?
+<a href="signup.html" class="text-blue-600">Sign up</a>
+</div>
+
+</div>
+
+<footer class="p-4 bg-gray-800 text-white text-center">
 StudyHub © 2026
 </footer>
 
